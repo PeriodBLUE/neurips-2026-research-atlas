@@ -4,14 +4,14 @@
 
 # NeurIPS ’26 · Research Atlas
 
-### Less searching. More discovery.
+### Big ideas. A clearer perspective.
 
 A field guide to **329 verified Oral & Spotlight papers**, organized around the questions researchers actually ask.
 
-[![Explore the atlas](https://img.shields.io/badge/Explore_the_atlas-365545?style=flat-square)](https://periodblue.github.io/neurips-2026-research-atlas/)
-[![Papers](https://img.shields.io/badge/verified_papers-329-e9eee3?style=flat-square&labelColor=365545)](site/data/papers.json)
-[![Taxonomy](https://img.shields.io/badge/taxonomy-15_fields_%C2%B7_57_subfields-e9eee3?style=flat-square&labelColor=365545)](#research-landscape)
-[![MIT](https://img.shields.io/badge/code-MIT-e9eee3?style=flat-square&labelColor=365545)](LICENSE)
+[![Explore the atlas](https://img.shields.io/badge/Explore_the_atlas-3159d9?style=flat-square)](https://periodblue.github.io/neurips-2026-research-atlas/)
+[![Papers](https://img.shields.io/badge/verified_papers-329-edf2ff?style=flat-square&labelColor=3159d9)](site/data/papers.json)
+[![Taxonomy](https://img.shields.io/badge/taxonomy-15_fields_%C2%B7_57_subfields-edf2ff?style=flat-square&labelColor=3159d9)](#research-landscape)
+[![MIT](https://img.shields.io/badge/code-MIT-edf2ff?style=flat-square&labelColor=3159d9)](LICENSE)
 
 [**Open the website ↗**](https://periodblue.github.io/neurips-2026-research-atlas/) · [Download data](site/data/papers_classified.csv) · [Methodology](#scope--methodology) · [Contribute](CONTRIBUTING.md) · [中文](README.zh-CN.md)
 
@@ -47,14 +47,14 @@ You may be starting a literature review, preparing a reading group, comparing ad
 - **Export what you see.** Download filtered CSV data or a Markdown reading checklist.
 - **Read comfortably.** English / 中文, light / dark, mobile layouts, keyboard search with `/`, and native accessible dialogs.
 
-The homepage illustration is a conceptual field atlas, **not** a semantic embedding or a measured similarity graph.
+The opening overview shows the full verified snapshot. Click **Oral** or **Spotlight** to start a reading session; counts in the explorer then follow your filters.
 
 <details>
 <summary>See the paper explorer and mobile dark theme</summary>
 
 ![Paper explorer with research fields and official source links](site/assets/explorer.jpg)
 
-<img src="site/assets/mobile-dark.jpg" width="320" alt="Chinese mobile interface in dark mode, showing generative modeling papers">
+<img src="site/assets/mobile-dark.jpg" width="320" alt="Chinese mobile interface in dark mode, showing language-model research papers">
 
 </details>
 

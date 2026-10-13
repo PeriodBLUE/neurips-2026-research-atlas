@@ -66,73 +66,81 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow">
-            <span class="status-dot"></span
-            ><span data-i18n="eyebrow"
-              >THE NEURIPS 2026 RESEARCH COLLECTION</span
-            >
+            <span class="edition-mark">2026 EDITION</span
+            ><span data-i18n="eyebrow">A FIELD GUIDE FOR RESEARCHERS</span>
           </p>
-          <h1 id="hero-title">
-            <span data-i18n="heroOne">Less searching.</span><br /><em
-              data-i18n="heroTwo"
-              >More discovery.</em
-            >
-          </h1>
+          <h1 id="hero-title">NeurIPS <em>2026.</em></h1>
+          <p class="hero-tagline" data-i18n="heroOne">
+            Big ideas. A clearer perspective.
+          </p>
           <p class="hero-description" data-i18n="heroDescription">
-            A considered guide to the ideas shaping machine learning. Explore
-            Oral & Spotlight papers, connect research fields, and find your next
-            direction.
+            Explore Oral & Spotlight papers by research field. Find the work
+            that connects to yours.
           </p>
           <div class="hero-cta">
             <a href="#workspace" class="primary-button"
-              ><span data-i18n="startExploring">Explore the collection</span
-              ><span aria-hidden="true">↗</span></a
-            ><span class="hero-caption" data-i18n="openCommunity"
-              >Open source. Built for researchers.</span
+              ><span data-i18n="startExploring">Explore papers</span
+              ><span aria-hidden="true">↓</span></a
+            ><a
+              class="hero-secondary"
+              href="https://github.com/PeriodBLUE/neurips-2026-research-atlas/blob/main/docs/report.zh-CN.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span data-i18n="readReport">Classification report</span> ↗</a
             >
           </div>
         </div>
-        <div
-          class="hero-art"
-          aria-label="Fifteen research fields organized into an atlas, decorative illustration"
-        >
-          <div class="art-label">
-            <span>THE RESEARCH LANDSCAPE</span><span>FIG. 01</span>
+        <aside class="collection-overview" aria-label="Dataset overview">
+          <div class="overview-heading">
+            <span data-i18n="overviewTitle">INSIDE THE COLLECTION</span
+            ><span class="overview-edition">VOL. 01</span>
           </div>
-          <svg id="atlas-art" viewBox="0 0 420 315" role="img">
-            <title>
-              Research fields: a conceptual atlas, not an embedding or
-              similarity map
-            </title>
-          </svg>
-          <div class="art-footer">
-            <span class="art-key"><i></i>15 connected perspectives</span
-            ><span>NeurIPS ’26 ↗</span>
+          <div class="overview-total">
+            <strong id="overview-total">329</strong>
+            <div>
+              <span data-i18n="verifiedPapers">Verified papers</span
+              ><span class="overview-source"
+                >NeurIPS ’26 · Oral & Spotlight</span
+              >
+            </div>
           </div>
-        </div>
+          <div class="overview-bar" aria-hidden="true">
+            <span id="overview-oral-bar"></span
+            ><span id="overview-spotlight-bar"></span>
+          </div>
+          <div class="overview-types">
+            <button data-overview="oral">
+              <i class="type-dot oral-dot"></i
+              ><strong id="overview-oral">108</strong> Oral
+              <span>↗</span></button
+            ><button data-overview="spotlight">
+              <i class="type-dot spotlight-dot"></i
+              ><strong id="overview-spotlight">221</strong> Spotlight
+              <span>↗</span>
+            </button>
+          </div>
+          <div class="overview-taxonomy">
+            <span
+              ><strong id="overview-fields">15</strong>
+              <span data-i18n="primaryFields">research fields</span></span
+            ><span
+              ><strong id="overview-subfields">57</strong>
+              <span data-i18n="secondaryFields">subfields</span></span
+            >
+          </div>
+        </aside>
       </section>
-      <section class="numbers" aria-label="Dataset overview">
-        <div>
-          <strong>329<span>↗</span></strong
-          ><span data-i18n="verifiedPapers">Verified papers</span>
-        </div>
-        <div>
-          <strong>108 <small>/</small> 221</strong
-          ><span>Oral <span class="light">/</span> Spotlight</span>
-        </div>
-        <div>
-          <strong>15 <small>/</small> 57</strong
-          ><span data-i18n="fieldSubfield">Fields / Subfields</span>
-        </div>
-        <div class="snapshot">
-          <span class="tiny-label" data-i18n="snapshot">DATA SNAPSHOT</span
-          ><strong>13 Oct 2026</strong
-          ><button id="coverage-button">
-            <span data-i18n="coverage"
-              >A verified subset, not the full program</span
-            ><span aria-hidden="true">↗</span>
-          </button>
-        </div>
-      </section>
+      <div class="snapshot-line">
+        <span class="snapshot-date"
+          ><span class="status-dot"></span
+          ><span data-i18n="snapshot">SNAPSHOT</span
+          ><time datetime="2026-10-13">13 Oct 2026</time></span
+        ><button id="coverage-button">
+          <span data-i18n="coverage"
+            >Verified subset · View scope & sources</span
+          ><span aria-hidden="true">↗</span>
+        </button>
+      </div>
       <section id="workspace" class="workspace" aria-label="Research explorer">
         <div class="workspace-heading">
           <div class="section-kicker" data-i18n="collectionKicker">

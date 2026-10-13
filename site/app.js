@@ -57,18 +57,20 @@ const words = {
   en: {
     exploreNav: "Explore papers",
     methodology: "Methodology",
-    eyebrow: "THE NEURIPS 2026 RESEARCH COLLECTION",
-    heroOne: "Less searching.",
-    heroTwo: "More discovery.",
+    eyebrow: "A FIELD GUIDE FOR RESEARCHERS",
+    heroOne: "Big ideas. A clearer perspective.",
     heroDescription:
-      "A considered guide to the ideas shaping machine learning. Explore Oral & Spotlight papers, connect research fields, and find your next direction.",
-    startExploring: "Explore the collection",
+      "Explore Oral & Spotlight papers by research field. Find the work that connects to yours.",
+    startExploring: "Explore papers",
     openCommunity: "Open source. Built for researchers.",
     verifiedPapers: "Verified papers",
+    overviewTitle: "INSIDE THE COLLECTION",
+    primaryFields: "research fields",
+    secondaryFields: "subfields",
     fieldSubfield: "Fields / Subfields",
-    snapshot: "DATA SNAPSHOT",
-    coverage: "A verified subset, not the full program",
-    collectionKicker: "01 / THE COLLECTION",
+    snapshot: "SNAPSHOT",
+    coverage: "Verified subset · View scope & sources",
+    collectionKicker: "The paper collection",
     papersTab: "Papers",
     landscapeTab: "Landscape",
     savedTab: "Reading list",
@@ -146,12 +148,12 @@ const words = {
     methodClassificationBody:
       "Presentation labels come from the official decision field. Primary and secondary research fields are analyst-assigned from titles, abstracts, and central contributions. Security, theory, efficiency, and scientific applications are classified by the research problem, even when LLMs or reinforcement learning are used. Every paper is counted once.",
     methodCaution:
-      "Counts show the composition of this subset, not acceptance probabilities or field quality. Field granularity and incomplete source coverage affect comparisons. The hero illustration is conceptual, not a semantic embedding.",
+      "Counts show the composition of this subset, not acceptance probabilities or field quality. Field granularity and incomplete source coverage affect comparisons. The overview shows the complete verified subset; explorer counts follow the active filters.",
     methodSources: "Sources & reproducibility",
     rawData: "Download classified data",
     pending: "86 unverified candidates (CSV)",
     provenance: "Snapshot provenance & source hashes",
-    readReport: "Full classification report",
+    readReport: "Classification report",
     privacyTitle: "A reading list that stays with you",
     privacy:
       "Bookmarks, language, and theme are stored only in this browser. There are no accounts or analytics. CSV and Markdown exports are generated locally. Fonts may load from Google Fonts; paper links open the original external sources.",
@@ -164,18 +166,20 @@ const words = {
   zh: {
     exploreNav: "探索论文",
     methodology: "整理方法",
-    eyebrow: "NEURIPS 2026 · 研究者的论文导航",
-    heroOne: "少一点搜寻，",
-    heroTwo: "多一点发现。",
+    eyebrow: "研究者的论文导航",
+    heroOne: "从研究全景，到下一篇精读。",
     heroDescription:
-      "从 Oral 与 Spotlight 出发，看见领域之间的联系。按研究问题探索论文，为下一次阅读、组会和选题找到方向。",
-    startExploring: "开始探索论文",
+      "按领域探索 Oral 与 Spotlight，为文献调研、组会阅读和下一次选题找到方向。",
+    startExploring: "探索论文",
     openCommunity: "开源共建，为研究者而作。",
     verifiedPapers: "已核验论文",
+    overviewTitle: "论文合集 · 一览",
+    primaryFields: "一级领域",
+    secondaryFields: "二级领域",
     fieldSubfield: "一级领域 / 二级领域",
     snapshot: "数据快照",
-    coverage: "已核验子集，非大会完整名单",
-    collectionKicker: "01 / 论文合集",
+    coverage: "已核验子集 · 查看范围与来源",
+    collectionKicker: "探索论文合集",
     papersTab: "论文列表",
     landscapeTab: "领域分布",
     savedTab: "阅读清单",
@@ -250,7 +254,7 @@ const words = {
     methodClassificationBody:
       "Oral/Spotlight取自官网decision字段。研究领域由分析者依据标题、摘要和核心贡献划分。安全、理论、效率、科学应用优先按研究问题归类，即使使用LLM或强化学习。每篇只计入一个主领域，交叉属性写入归类说明。",
     methodCaution:
-      "这些数量不能用于推断领域录用率或研究质量；领域粒度和公开数据覆盖缺口都会影响比较。首页图案是概念插画，不是论文语义嵌入图。",
+      "这些数量不能用于推断领域录用率或研究质量；领域粒度和公开数据覆盖缺口都会影响比较。首页概览展示全部已核验子集；论文区数量随当前筛选条件变化。",
     methodSources: "来源与可复现性",
     rawData: "下载逐篇分类表",
     pending: "86篇待核验候选（CSV）",
@@ -344,35 +348,19 @@ function persistUrl(paperId) {
     /* local files and restricted embeds may not allow history updates */
   }
 }
-function renderArt() {
-  const nodes = [
-    [91, 142, "F"],
-    [135, 70, "D"],
-    [222, 55, "B"],
-    [311, 99, "A"],
-    [328, 170, "H"],
-    [282, 246, "L"],
-    [191, 269, "M"],
-    [93, 236, "K"],
-    [167, 117, "E"],
-    [255, 128, "I"],
-    [244, 213, "J"],
-    [153, 218, "G"],
-    [207, 163, "C"],
-    [59, 191, "N"],
-    [337, 223, "O"],
-  ];
-  let svg =
-    "<title>Conceptual atlas of research fields, not a semantic embedding</title>";
-  svg +=
-    '<ellipse class="atlas-ring" cx="205" cy="163" rx="135" ry="86" transform="rotate(-32 205 163)"/><ellipse class="atlas-ring" cx="205" cy="163" rx="91" ry="128" transform="rotate(-28 205 163)"/><ellipse class="atlas-ring" cx="205" cy="163" rx="135" ry="60" transform="rotate(34 205 163)"/><path class="atlas-guide" d="M36 163h346M205 28v276"/>';
-  for (const [x, y, id] of nodes) {
-    const f = data.fields.find((f) => f.id === id);
-    svg += `<circle class="atlas-node" cx="${x}" cy="${y}" r="${id === "C" ? 5 : 4}" fill="${f.color}"/>`;
-  }
-  svg +=
-    '<rect x="154" y="148" width="103" height="51" rx="4" fill="var(--art)"/><text x="205" y="169" text-anchor="middle" class="atlas-core">NeurIPS ’26</text><text x="205" y="185" text-anchor="middle" class="atlas-sub">RESEARCH ATLAS</text><text x="20" y="120" class="atlas-label">FOUNDATIONS</text><text x="261" y="76" class="atlas-label">INTELLIGENCE</text><text x="272" y="276" class="atlas-label">DISCOVERY</text><text x="39" y="266" class="atlas-label">EMBODIMENT</text>';
-  $("atlas-art").innerHTML = svg;
+function renderOverview() {
+  const counts = summarize(data.papers);
+  $("overview-total").textContent = counts.total;
+  $("overview-oral").textContent = counts.oral;
+  $("overview-spotlight").textContent = counts.spotlight;
+  $("overview-fields").textContent = data.fields.length;
+  $("overview-subfields").textContent = data.fields.reduce(
+    (n, f) => n + f.subfields.length,
+    0,
+  );
+  $("overview-oral-bar").style.width = `${(counts.oral / counts.total) * 100}%`;
+  $("overview-spotlight-bar").style.width =
+    `${(counts.spotlight / counts.total) * 100}%`;
 }
 function renderFields() {
   const scope = data.papers.filter(
@@ -405,7 +393,7 @@ function renderFields() {
 function paperCard(p) {
   const f = fieldOf(p),
     s = subOf(p);
-  return `<article class="paper-card" data-paper="${p.id}"><div class="paper-top"><span class="badge ${p.type}">${p.type.toUpperCase()}</span><span class="paper-track">${t(p.track)}</span><span class="paper-index">${p.id}</span><button class="save-button" data-save="${p.id}" aria-label="${t(saved.has(p.id) ? "unsave" : "save")}: ${escape(p.title)}" aria-pressed="${saved.has(p.id)}">${icon("bookmark")}</button></div><h3 class="paper-title"><a href="${escape(p.officialUrl)}" target="_blank" rel="noopener noreferrer">${escape(p.title)}<span class="arrow" aria-hidden="true">↗</span></a></h3><p class="authors" title="${escape(p.authors.join(", "))}">${escape(p.authors.join(" · "))}</p><div class="paper-bottom"><span class="paper-topic"><i style="background:${f.color}"></i>${escape(local(f))}</span><span class="topic-separator">/</span><span class="sub-topic">${escape(local(s))}</span><div class="paper-links"><button data-details="${p.id}">${t("details")} ↗</button><a href="${escape(p.openreviewUrl)}" target="_blank" rel="noopener noreferrer">OpenReview ↗</a></div></div></article>`;
+  return `<article class="paper-card" data-paper="${p.id}"><div class="paper-top"><span class="badge ${p.type}">${p.type.toUpperCase()}</span><span class="paper-track">${t(p.track)}</span><span class="paper-index">${p.id}</span><button class="save-button" data-save="${p.id}" aria-label="${t(saved.has(p.id) ? "unsave" : "save")}: ${escape(p.title)}" aria-pressed="${saved.has(p.id)}">${icon("bookmark")}</button></div><h3 class="paper-title"><a href="${escape(p.officialUrl)}" target="_blank" rel="noopener noreferrer">${escape(p.title)}<span class="arrow" aria-hidden="true">↗</span></a></h3><p class="authors" title="${escape(p.authors.join(", "))}">${escape(p.authors.join(" · "))}</p><div class="paper-bottom"><div class="paper-taxonomy"><span class="paper-topic"><i style="background:${f.color}"></i>${escape(local(f))}</span><span class="topic-separator">/</span><span class="sub-topic">${escape(local(s))}</span></div><div class="paper-links"><button data-details="${p.id}">${t("details")} ↗</button><a href="${escape(p.openreviewUrl)}" target="_blank" rel="noopener noreferrer">OpenReview ↗</a></div></div></article>`;
 }
 function renderLandscape() {
   const max = Math.max(
@@ -596,7 +584,7 @@ try {
   );
   const initialPaper = new URLSearchParams(location.search).get("paper");
   translate();
-  renderArt();
+  renderOverview();
   render();
   if (initialPaper) openPaper(initialPaper);
   const mq = matchMedia("(max-width:800px)");
@@ -641,6 +629,17 @@ try {
   document.addEventListener("click", async (event) => {
     const b = event.target.closest("button");
     if (!b) return;
+    if (b.hasAttribute("data-overview")) {
+      change({
+        type: b.dataset.overview,
+        view: "papers",
+        q: "",
+        field: "",
+        subfield: "",
+        track: "all",
+      });
+      $("workspace").scrollIntoView({ block: "start" });
+    }
     if (b.hasAttribute("data-view")) change({ view: b.dataset.view });
     if (b.hasAttribute("data-type")) change({ type: b.dataset.type });
     if (b.hasAttribute("data-field")) {
