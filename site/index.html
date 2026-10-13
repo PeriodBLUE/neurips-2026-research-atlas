@@ -1,43 +1,309 @@
 <!doctype html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="light dark">
-  <meta name="description" content="A curated, two-level research map of 329 verified NeurIPS 2026 Oral and Spotlight papers. Explore fields, follow official links, and build your reading list.">
-  <meta property="og:title" content="NeurIPS ’26 — Research Atlas">
-  <meta property="og:description" content="Find your next research direction. 329 verified papers. 15 fields. 57 subfields. A transparent, community research guide.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://periodblue.github.io/neurips-2026-research-atlas/assets/preview.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="canonical" href="https://periodblue.github.io/neurips-2026-research-atlas/">
-  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <title>NeurIPS ’26 — Research Atlas</title>
-</head>
-<body>
-  <a class="skip" href="#workspace">Skip to papers</a>
-  <header class="topbar">
-    <a class="brand" href="./" aria-label="Research Atlas home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 26 16 5l11 21M10 18h12M16 5v21"/></svg><span>research<span class="brand-serif">atlas</span><sup>’26</sup></span></a>
-    <nav aria-label="Main navigation"><a href="#workspace" data-i18n="exploreNav">Explore papers</a><button type="button" id="about-nav" data-i18n="methodology">Methodology</button></nav>
-    <div class="top-actions"><button id="language" class="text-button" aria-label="Switch language">中文</button><span class="divider"></span><button id="theme" class="icon-button" aria-label="Switch to dark theme"></button><a class="github-link" href="https://github.com/PeriodBLUE/neurips-2026-research-atlas" target="_blank" rel="noopener noreferrer"><span data-icon="github"></span><span>GitHub</span><span aria-hidden="true">↗</span></a></div>
-  </header>
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span><span data-i18n="eyebrow">THE NEURIPS 2026 RESEARCH COLLECTION</span></p><h1 id="hero-title"><span data-i18n="heroOne">Less searching.</span><br><em data-i18n="heroTwo">More discovery.</em></h1><p class="hero-description" data-i18n="heroDescription">A considered guide to the ideas shaping machine learning. Explore Oral & Spotlight papers, connect research fields, and find your next direction.</p><div class="hero-cta"><a href="#workspace" class="primary-button"><span data-i18n="startExploring">Explore the collection</span><span aria-hidden="true">↗</span></a><span class="hero-caption" data-i18n="openCommunity">Open source. Built for researchers.</span></div></div>
-      <div class="hero-art" aria-label="Fifteen research fields organized into an atlas, decorative illustration"><div class="art-label"><span>THE RESEARCH LANDSCAPE</span><span>FIG. 01</span></div><svg id="atlas-art" viewBox="0 0 420 315" role="img"><title>Research fields: a conceptual atlas, not an embedding or similarity map</title></svg><div class="art-footer"><span class="art-key"><i></i>15 connected perspectives</span><span>NeurIPS ’26 ↗</span></div></div>
-    </section>
-    <section class="numbers" aria-label="Dataset overview"><div><strong>329<span>↗</span></strong><span data-i18n="verifiedPapers">Verified papers</span></div><div><strong>108 <small>/</small> 221</strong><span>Oral <span class="light">/</span> Spotlight</span></div><div><strong>15 <small>/</small> 57</strong><span data-i18n="fieldSubfield">Fields / Subfields</span></div><div class="snapshot"><span class="tiny-label" data-i18n="snapshot">DATA SNAPSHOT</span><strong>13 Oct 2026</strong><button id="coverage-button"><span data-i18n="coverage">A verified subset, not the full program</span><span aria-hidden="true">↗</span></button></div></section>
-    <section id="workspace" class="workspace" aria-label="Research explorer">
-      <div class="workspace-heading"><div class="section-kicker" data-i18n="collectionKicker">01 / THE COLLECTION</div><div class="view-tabs" role="tablist" aria-label="View"><button role="tab" aria-selected="true" data-view="papers"><span data-icon="list"></span><span data-i18n="papersTab">Papers</span></button><button role="tab" aria-selected="false" data-view="landscape"><span data-icon="chart"></span><span data-i18n="landscapeTab">Landscape</span></button><button role="tab" aria-selected="false" data-view="saved"><span data-icon="bookmark"></span><span data-i18n="savedTab">Reading list</span><span id="saved-count" class="count-bubble">0</span></button></div></div>
-      <div class="explorer-grid"><aside class="sidebar"><details id="field-panel" open><summary><span data-i18n="browseFields">BROWSE BY FIELD</span><span class="mobile-chevron">⌄</span></summary><div id="field-list" class="field-list"></div></details><div class="sidebar-note"><span data-icon="compass"></span><p data-i18n="taxonomyNote">One primary field per paper. A starting point for discovery, not a boundary between ideas.</p><button id="taxonomy-about" data-i18n="howClassified">How we classify ↗</button></div></aside>
-      <div class="results-area"><div class="search-row"><label class="search-box"><span data-icon="search"></span><input type="search" id="search" placeholder="Search titles, authors, or research topics…" aria-label="Search papers" autocomplete="off"><kbd>/</kbd></label><button id="export" class="outline-button"><span data-icon="download"></span><span data-i18n="export">Export</span></button></div><div class="filter-row"><div class="type-tabs" role="group" aria-label="Presentation type"><button data-type="all" aria-pressed="true" data-i18n="allTypes">All papers</button><button data-type="oral" aria-pressed="false"><i class="type-dot oral-dot"></i>Oral</button><button data-type="spotlight" aria-pressed="false"><i class="type-dot spotlight-dot"></i>Spotlight</button></div><label class="sr-only" for="track">Track</label><select id="track"><option value="all">All tracks</option><option value="main">Main track</option><option value="evaluations">Evaluations & Datasets</option><option value="position">Position papers</option></select><label class="sr-only" for="sort">Sort order</label><select id="sort"><option value="type">Oral first</option><option value="title">Title A–Z</option><option value="field">By field</option></select></div><div id="subfield-row" class="subfield-row" hidden><label for="subfield" data-i18n="subfield">Subfield</label><select id="subfield"></select></div><div class="result-heading"><div><h2 id="results-title">All research fields</h2><p id="results-meta" aria-live="polite">Loading the collection…</p></div><button id="reset" class="text-button" data-i18n="reset">Reset filters ↺</button></div><div id="active-filters"></div><div id="results" role="tabpanel"><div class="loading-state">Loading the research atlas…</div></div><div id="pagination"></div></div></div>
-    </section>
-    <section class="community"><div><span class="section-kicker" data-i18n="communityKicker">A COMMUNITY RESEARCH COMPANION</span><h2 data-i18n="communityTitle">Good research starts with a better question.</h2><p data-i18n="communityDescription">Spot a missing paper or a more useful classification? Help make this atlas a better starting point for everyone.</p></div><a href="https://github.com/PeriodBLUE/neurips-2026-research-atlas/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" class="outline-button"><span data-i18n="contribute">Contribute to the atlas</span>↗</a></section>
-  </main>
-  <footer><a class="footer-brand" href="./">research<span>atlas</span> ’26</a><p data-i18n="footerNote">An independent research guide. Not affiliated with NeurIPS.</p><div><a href="./data/papers_classified.csv" data-i18n="dataDownload">Dataset ↗</a><a href="https://github.com/PeriodBLUE/neurips-2026-research-atlas#readme" target="_blank" rel="noopener noreferrer">README ↗</a><span>2026</span></div></footer>
-  <dialog id="modal" aria-labelledby="modal-title"><button class="modal-close icon-button" aria-label="Close dialog" id="close-modal"><span data-icon="close"></span></button><div id="modal-body"></div></dialog>
-  <div id="toast" role="status" aria-live="polite"></div>
-  <noscript><p class="noscript">This explorer needs JavaScript. You can still <a href="./data/papers_classified.csv">download all 329 classified papers</a> or <a href="https://github.com/PeriodBLUE/neurips-2026-research-atlas/blob/main/docs/report.zh-CN.md">read the full report</a>.</p></noscript>
-  <script type="module" src="./app.js"></script>
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="description"
+      content="A curated, two-level research map of 329 verified NeurIPS 2026 Oral and Spotlight papers. Explore fields, follow official links, and build your reading list."
+    />
+    <meta property="og:title" content="NeurIPS ’26 — Research Atlas" />
+    <meta
+      property="og:description"
+      content="Find your next research direction. 329 verified papers. 15 fields. 57 subfields. A transparent, community research guide."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://periodblue.github.io/neurips-2026-research-atlas/assets/preview.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="canonical"
+      href="https://periodblue.github.io/neurips-2026-research-atlas/"
+    />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>NeurIPS ’26 — Research Atlas</title>
+  </head>
+  <body>
+    <a class="skip" href="#workspace">Skip to papers</a>
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Research Atlas home"
+        ><svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M5 26 16 5l11 21M10 18h12M16 5v21" /></svg
+        ><span
+          >research<span class="brand-serif">atlas</span><sup>’26</sup></span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#workspace" data-i18n="exploreNav">Explore papers</a
+        ><button type="button" id="about-nav" data-i18n="methodology">
+          Methodology
+        </button>
+      </nav>
+      <div class="top-actions">
+        <button id="language" class="text-button" aria-label="Switch language">
+          中文</button
+        ><span class="divider"></span
+        ><button
+          id="theme"
+          class="icon-button"
+          aria-label="Switch to dark theme"
+        ></button
+        ><a
+          class="github-link"
+          href="https://github.com/PeriodBLUE/neurips-2026-research-atlas"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><span data-icon="github"></span><span>GitHub</span
+          ><span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="status-dot"></span
+            ><span data-i18n="eyebrow"
+              >THE NEURIPS 2026 RESEARCH COLLECTION</span
+            >
+          </p>
+          <h1 id="hero-title">
+            <span data-i18n="heroOne">Less searching.</span><br /><em
+              data-i18n="heroTwo"
+              >More discovery.</em
+            >
+          </h1>
+          <p class="hero-description" data-i18n="heroDescription">
+            A considered guide to the ideas shaping machine learning. Explore
+            Oral & Spotlight papers, connect research fields, and find your next
+            direction.
+          </p>
+          <div class="hero-cta">
+            <a href="#workspace" class="primary-button"
+              ><span data-i18n="startExploring">Explore the collection</span
+              ><span aria-hidden="true">↗</span></a
+            ><span class="hero-caption" data-i18n="openCommunity"
+              >Open source. Built for researchers.</span
+            >
+          </div>
+        </div>
+        <div
+          class="hero-art"
+          aria-label="Fifteen research fields organized into an atlas, decorative illustration"
+        >
+          <div class="art-label">
+            <span>THE RESEARCH LANDSCAPE</span><span>FIG. 01</span>
+          </div>
+          <svg id="atlas-art" viewBox="0 0 420 315" role="img">
+            <title>
+              Research fields: a conceptual atlas, not an embedding or
+              similarity map
+            </title>
+          </svg>
+          <div class="art-footer">
+            <span class="art-key"><i></i>15 connected perspectives</span
+            ><span>NeurIPS ’26 ↗</span>
+          </div>
+        </div>
+      </section>
+      <section class="numbers" aria-label="Dataset overview">
+        <div>
+          <strong>329<span>↗</span></strong
+          ><span data-i18n="verifiedPapers">Verified papers</span>
+        </div>
+        <div>
+          <strong>108 <small>/</small> 221</strong
+          ><span>Oral <span class="light">/</span> Spotlight</span>
+        </div>
+        <div>
+          <strong>15 <small>/</small> 57</strong
+          ><span data-i18n="fieldSubfield">Fields / Subfields</span>
+        </div>
+        <div class="snapshot">
+          <span class="tiny-label" data-i18n="snapshot">DATA SNAPSHOT</span
+          ><strong>13 Oct 2026</strong
+          ><button id="coverage-button">
+            <span data-i18n="coverage"
+              >A verified subset, not the full program</span
+            ><span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+      <section id="workspace" class="workspace" aria-label="Research explorer">
+        <div class="workspace-heading">
+          <div class="section-kicker" data-i18n="collectionKicker">
+            01 / THE COLLECTION
+          </div>
+          <div class="view-tabs" role="tablist" aria-label="View">
+            <button role="tab" aria-selected="true" data-view="papers">
+              <span data-icon="list"></span
+              ><span data-i18n="papersTab">Papers</span></button
+            ><button role="tab" aria-selected="false" data-view="landscape">
+              <span data-icon="chart"></span
+              ><span data-i18n="landscapeTab">Landscape</span></button
+            ><button role="tab" aria-selected="false" data-view="saved">
+              <span data-icon="bookmark"></span
+              ><span data-i18n="savedTab">Reading list</span
+              ><span id="saved-count" class="count-bubble">0</span>
+            </button>
+          </div>
+        </div>
+        <div class="explorer-grid">
+          <aside class="sidebar">
+            <details id="field-panel" open>
+              <summary>
+                <span data-i18n="browseFields">BROWSE BY FIELD</span
+                ><span class="mobile-chevron">⌄</span>
+              </summary>
+              <div id="field-list" class="field-list"></div>
+            </details>
+            <div class="sidebar-note">
+              <span data-icon="compass"></span>
+              <p data-i18n="taxonomyNote">
+                One primary field per paper. A starting point for discovery, not
+                a boundary between ideas.
+              </p>
+              <button id="taxonomy-about" data-i18n="howClassified">
+                How we classify ↗
+              </button>
+            </div>
+          </aside>
+          <div class="results-area">
+            <div class="search-row">
+              <label class="search-box"
+                ><span data-icon="search"></span
+                ><input
+                  type="search"
+                  id="search"
+                  placeholder="Search titles, authors, or research topics…"
+                  aria-label="Search papers"
+                  autocomplete="off"
+                /><kbd>/</kbd></label
+              ><button id="export" class="outline-button">
+                <span data-icon="download"></span
+                ><span data-i18n="export">Export</span>
+              </button>
+            </div>
+            <div class="filter-row">
+              <div
+                class="type-tabs"
+                role="group"
+                aria-label="Presentation type"
+              >
+                <button
+                  data-type="all"
+                  aria-pressed="true"
+                  data-i18n="allTypes"
+                >
+                  All papers</button
+                ><button data-type="oral" aria-pressed="false">
+                  <i class="type-dot oral-dot"></i>Oral</button
+                ><button data-type="spotlight" aria-pressed="false">
+                  <i class="type-dot spotlight-dot"></i>Spotlight
+                </button>
+              </div>
+              <label class="sr-only" for="track">Track</label
+              ><select id="track">
+                <option value="all">All tracks</option>
+                <option value="main">Main track</option>
+                <option value="evaluations">Evaluations & Datasets</option>
+                <option value="position">Position papers</option></select
+              ><label class="sr-only" for="sort">Sort order</label
+              ><select id="sort">
+                <option value="type">Oral first</option>
+                <option value="title">Title A–Z</option>
+                <option value="field">By field</option>
+              </select>
+            </div>
+            <div id="subfield-row" class="subfield-row" hidden>
+              <label for="subfield" data-i18n="subfield">Subfield</label
+              ><select id="subfield"></select>
+            </div>
+            <div class="result-heading">
+              <div>
+                <h2 id="results-title">All research fields</h2>
+                <p id="results-meta" aria-live="polite">
+                  Loading the collection…
+                </p>
+              </div>
+              <button id="reset" class="text-button" data-i18n="reset">
+                Reset filters ↺
+              </button>
+            </div>
+            <div id="active-filters"></div>
+            <div id="results" role="tabpanel">
+              <div class="loading-state">Loading the research atlas…</div>
+            </div>
+            <div id="pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="community">
+        <div>
+          <span class="section-kicker" data-i18n="communityKicker"
+            >A COMMUNITY RESEARCH COMPANION</span
+          >
+          <h2 data-i18n="communityTitle">
+            Good research starts with a better question.
+          </h2>
+          <p data-i18n="communityDescription">
+            Spot a missing paper or a more useful classification? Help make this
+            atlas a better starting point for everyone.
+          </p>
+        </div>
+        <a
+          href="https://github.com/PeriodBLUE/neurips-2026-research-atlas/blob/main/CONTRIBUTING.md"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="outline-button"
+          ><span data-i18n="contribute">Contribute to the atlas</span>↗</a
+        >
+      </section>
+    </main>
+    <footer>
+      <a class="footer-brand" href="./">research<span>atlas</span> ’26</a>
+      <p data-i18n="footerNote">
+        An independent research guide. Not affiliated with NeurIPS.
+      </p>
+      <div>
+        <a href="./data/papers_classified.csv" data-i18n="dataDownload"
+          >Dataset ↗</a
+        ><a
+          href="https://github.com/PeriodBLUE/neurips-2026-research-atlas#readme"
+          target="_blank"
+          rel="noopener noreferrer"
+          >README ↗</a
+        ><span>2026</span>
+      </div>
+    </footer>
+    <dialog id="modal" aria-labelledby="modal-title">
+      <button
+        class="modal-close icon-button"
+        aria-label="Close dialog"
+        id="close-modal"
+      >
+        <span data-icon="close"></span>
+      </button>
+      <div id="modal-body"></div>
+    </dialog>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <noscript
+      ><p class="noscript">
+        This explorer needs JavaScript. You can still
+        <a href="./data/papers_classified.csv"
+          >download all 329 classified papers</a
+        >
+        or
+        <a
+          href="https://github.com/PeriodBLUE/neurips-2026-research-atlas/blob/main/docs/report.zh-CN.md"
+          >read the full report</a
+        >.
+      </p></noscript
+    >
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
