@@ -1,0 +1,24 @@
+name: Paper or classification correction
+description: Add primary evidence for a missing paper, presentation label, or classification correction.
+title: "[Paper] "
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Full paper title
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official NeurIPS or OpenReview URL
+      description: Provide a primary source, not only a community list.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed change and evidence
+      description: Explain the presentation decision, track, or suggested primary field and subfield. Include the current record ID if available.
+    validations:
+      required: true

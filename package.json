@@ -1,0 +1,9 @@
+{
+  "name": "neurips-2026-research-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A curated research companion for verified NeurIPS 2026 Oral and Spotlight papers.",
+  "scripts": {"test": "node --test tests/*.test.js", "serve": "python -m http.server 8766 --bind 127.0.0.1 --directory site"},
+  "engines": {"node": ">=22"}
+}

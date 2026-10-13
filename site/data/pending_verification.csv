@@ -1,0 +1,87 @@
+﻿论文标题,快照标签,快照赛道,论文页,状态
+IndustryCode: A Benchmark for Industry Code Generation,spotlight,E&D,https://neurips.cc/virtual/2026/poster/139055,第三方快照收录；本次官方decision数据未核实，不计入汇总
+EVALUATION CARDS: An Interpretive Layer for AI Evaluation Reporting,spotlight,E&D,https://neurips.cc/virtual/2026/poster/139130,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Do Image Editing Models Understand Lighting?,spotlight,E&D,https://neurips.cc/virtual/2026/poster/139308,第三方快照收录；本次官方decision数据未核实，不计入汇总
+GeoSym127K: Scalable Symbolically-verifiable Synthesis for Multimodal Geometric Reasoning,oral,E&D,https://neurips.cc/virtual/2026/poster/139481,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The Value of Covariance Matching in Gaussian DDPMs and the Lanczos Sampler,spotlight,Main,https://neurips.cc/virtual/2026/poster/148184,第三方快照收录；本次官方decision数据未核实，不计入汇总
+LittleLearner: Language Models Under Pedagogically-Controlled Knowledge Exposure,oral,Main,https://neurips.cc/virtual/2026/poster/148220,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Beyond Coordinates: Encoding Graph Structure via Contextual Distribution and Relational Similarity,spotlight,Main,https://neurips.cc/virtual/2026/poster/148246,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The Implicit Bias of Hyperbolic Representation Learning for Multiclass Data: A Busemann Risk Perspective,spotlight,Main,https://neurips.cc/virtual/2026/poster/148340,第三方快照收录；本次官方decision数据未核实，不计入汇总
+How Far Is Too Far? Object Recognition Declines Monotonically with Semantic Distance,spotlight,Main,https://neurips.cc/virtual/2026/poster/148472,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Sparse Updates Generalize Better Than Optimization: Stability Analysis for Randomized Subspace Descent,spotlight,Main,https://neurips.cc/virtual/2026/poster/148588,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Breakeven complexity: A new perspective on neural partial differential equation solvers,oral,Main,https://neurips.cc/virtual/2026/poster/148644,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Is Dimensionality a Barrier for Retrieval Models?,spotlight,Main,https://neurips.cc/virtual/2026/poster/148654,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Consistent 3D Surface Flow Model with Global State,oral,Main,https://neurips.cc/virtual/2026/poster/148758,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Regret–Oracle Complexity Tradeoffs in Agnostic Online Learning,spotlight,Main,https://neurips.cc/virtual/2026/poster/148781,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Normative Networks for Source Separation via Local Plasticity and Dendritic Computation,spotlight,Main,https://neurips.cc/virtual/2026/poster/148835,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Parallel-in-Time Training of Recurrent Neural Networks for Dynamical Systems Reconstruction,spotlight,Main,https://neurips.cc/virtual/2026/poster/148849,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Colored Noise Diffusion Sampling,oral,Main,https://neurips.cc/virtual/2026/poster/148997,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Measuring Robustness and Efficiency in a Connectome-Constrained Fly Visual System Model on a Collision-Detection Task,spotlight,Main,https://neurips.cc/virtual/2026/poster/149010,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Self-Rewarded Multimodal Coherent Reasoning Across Diverse Visual Domains,spotlight,Main,https://neurips.cc/virtual/2026/poster/149029,第三方快照收录；本次官方decision数据未核实，不计入汇总
+First-Token Attraction in Mamba Dynamics,spotlight,Main,https://neurips.cc/virtual/2026/poster/149171,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The Surprising Effectiveness of Video Diffusion Models for Hand Motion Reconstruction,spotlight,Main,https://neurips.cc/virtual/2026/poster/149266,第三方快照收录；本次官方decision数据未核实，不计入汇总
+"Unlearning That Lasts: Utility-Preserving, Robust, and Almost Irreversible Forgetting in LLMs",spotlight,Main,https://neurips.cc/virtual/2026/poster/149440,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Impossibility of Distribution-Free Predictive Inference for Individual Treatment Effects,oral,Main,https://neurips.cc/virtual/2026/poster/149451,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Mildly Overparameterized ReLU Networks on Orthogonal Data: Incremental Learning and Implicit Bias,spotlight,Main,https://neurips.cc/virtual/2026/poster/149598,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Embedded-Arena: Building Hardware-in-the-Loop Coding Agents to Run AI on Microcontrollers,spotlight,Main,https://neurips.cc/virtual/2026/poster/149789,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Entropy Minimization without Model Collapse: Mitigating Prediction Bias in Medical Imaging,spotlight,Main,https://neurips.cc/virtual/2026/poster/149828,第三方快照收录；本次官方decision数据未核实，不计入汇总
+UltraDiff:Transferring High-Fidelity Priors to Compressed Latent Spaces for High-resolution Image Generation,spotlight,Main,https://neurips.cc/virtual/2026/poster/150314,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Phase Kernel Lifts Capacity of Dense Associative Memory,spotlight,Main,https://neurips.cc/virtual/2026/poster/150371,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Learning Discrete Riemannian Metrics for Physical Fields with Cochain-Frame Equivariance,spotlight,Main,https://neurips.cc/virtual/2026/poster/150499,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Online Allocation with Differential Privacy,spotlight,Main,https://neurips.cc/virtual/2026/poster/150540,第三方快照收录；本次官方decision数据未核实，不计入汇总
+ROTATE: Regret-driven Open-ended Training for Ad Hoc Teamwork,spotlight,Main,https://neurips.cc/virtual/2026/poster/150582,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Trainable Topology Supervision under Structurally Unreliable Pseudo Supervision,spotlight,Main,https://neurips.cc/virtual/2026/poster/150633,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Improving the Diffusability of Motion Tokenizer,spotlight,Main,https://neurips.cc/virtual/2026/poster/150734,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Neural Dual Bounds: Valid-by-Construction JGLP Warm-Starts for MAP and Constrained MAP,spotlight,Main,https://neurips.cc/virtual/2026/poster/150753,第三方快照收录；本次官方decision数据未核实，不计入汇总
+What do EEG Foundation Models Capture from Human Brain Signals?,spotlight,Main,https://neurips.cc/virtual/2026/poster/150770,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Unified Forensic Preference Learning for Generalizable Synthetic Image Detection,spotlight,Main,https://neurips.cc/virtual/2026/poster/150807,第三方快照收录；本次官方decision数据未核实，不计入汇总
+(Strongly) Replicable Distribution Testers imply High Probability Distribution Testers,spotlight,Main,https://neurips.cc/virtual/2026/poster/150921,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Flow-DPPO: Divergence Proximal Policy Optimization for Flow Matching Models,spotlight,Main,https://neurips.cc/virtual/2026/poster/150977,第三方快照收录；本次官方decision数据未核实，不计入汇总
+PhaseLoRA: Control-Regime-Conditioned Low-Rank Adaptation for Continuous-Action Vision-Language-Action Policies,oral,Main,https://neurips.cc/virtual/2026/poster/151017,第三方快照收录；本次官方decision数据未核实，不计入汇总
+MUX: Continuous Reasoning via Multiplexed Tokens,spotlight,Main,https://neurips.cc/virtual/2026/poster/151022,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The Value of Being Wrong: Self-Mined Visual In-Context Learning from Errors,spotlight,Main,https://neurips.cc/virtual/2026/poster/151028,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Colour me shocked: Exact Molecular Hessians from MLIPs in O(N) time using sparse differentiation!,spotlight,Main,https://neurips.cc/virtual/2026/poster/151062,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Reconstructing the Vocal Tract with Differentiable Acoustic Simulation,spotlight,Main,https://neurips.cc/virtual/2026/poster/151084,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Norm Enforcement for AI Agents: Robustly Shaping Behavior in Multi-Agent Systems,spotlight,Main,https://neurips.cc/virtual/2026/poster/151090,第三方快照收录；本次官方decision数据未核实，不计入汇总
+CausalBind: Causal Modeling and Learning for Protein-Molecule Virtual Screening,oral,Main,https://neurips.cc/virtual/2026/poster/151296,第三方快照收录；本次官方decision数据未核实，不计入汇总
+"Parabolic Position Encoding: Vision-Centric, Principled, Extrapolatable, General",spotlight,Main,https://neurips.cc/virtual/2026/poster/151484,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Token-to-Token Alignment of Text Embeddings for Semantic Blending,spotlight,Main,https://neurips.cc/virtual/2026/poster/151884,第三方快照收录；本次官方decision数据未核实，不计入汇总
+ProCLIP: Progressive Vision-Language Alignment via LLM-based Embedder,spotlight,Main,https://neurips.cc/virtual/2026/poster/151998,第三方快照收录；本次官方decision数据未核实，不计入汇总
+"Sort, Partition, Randomize: Optimal Binary Hypothesis Testing under Local Differential Privacy",spotlight,Main,https://neurips.cc/virtual/2026/poster/152035,第三方快照收录；本次官方decision数据未核实，不计入汇总
+From Next-Token to Next-Block: A Principled Adaptation Path for Diffusion LLMs,spotlight,Main,https://neurips.cc/virtual/2026/poster/152123,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The Multiscale Single-Index Model: A Toy Model for Hierarchical Feature Learning,spotlight,Main,https://neurips.cc/virtual/2026/poster/152129,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Noise-Regularized Training for Learned Image Compression,spotlight,Main,https://neurips.cc/virtual/2026/poster/152186,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Vision Token Pruning via Query-Vision Interaction Decomposition,spotlight,Main,https://neurips.cc/virtual/2026/poster/152195,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Domination-Avoiding Learning Agents Cannot Collude,spotlight,Main,https://neurips.cc/virtual/2026/poster/152226,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Self-Distilled RLVR,spotlight,Main,https://neurips.cc/virtual/2026/poster/152431,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Causal Discovery over Clusters of Variables in Non-Markovian Systems,spotlight,Main,https://neurips.cc/virtual/2026/poster/152473,第三方快照收录；本次官方decision数据未核实，不计入汇总
+CLIOPATRA: Extracting Private Information from LLM Insights,oral,Main,https://neurips.cc/virtual/2026/oral/152544,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Generating Physically Consistent Molecules with Energy-Based Models,spotlight,Main,https://neurips.cc/virtual/2026/poster/152559,第三方快照收录；本次官方decision数据未核实，不计入汇总
+MACRO: Training-free Multi-plane Attention for Closeup Render Optimization,spotlight,Main,https://neurips.cc/virtual/2026/poster/152798,第三方快照收录；本次官方decision数据未核实，不计入汇总
+OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation,spotlight,Main,https://neurips.cc/virtual/2026/poster/152937,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The Design Space of Tri-Modal Masked Diffusion Models,spotlight,Main,https://neurips.cc/virtual/2026/poster/153185,第三方快照收录；本次官方decision数据未核实，不计入汇总
+CoMMa: Contribution-Aware Medical Multi-Agents for Decentralized Oncology Decision Support,spotlight,Main,https://neurips.cc/virtual/2026/poster/153350,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Theoretical Limits of Language Model Alignment,spotlight,Main,https://neurips.cc/virtual/2026/poster/153597,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Beyond Linear Decoders: Dynamic Expert-Coupled Optimal Decoding for Time Series Forecasting,spotlight,Main,https://neurips.cc/virtual/2026/poster/153816,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Exact Flow Linear Attention: Exact Solution from Continuous-Time Dynamics,spotlight,Main,https://neurips.cc/virtual/2026/poster/154073,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Paloma: Phase-Conditioned Residual Modulation for Time Series Forecasting,spotlight,Main,https://neurips.cc/virtual/2026/poster/154087,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Mesh BDF: Barycentric Dominance Field for 3D Native Mesh Generation,spotlight,Main,https://neurips.cc/virtual/2026/poster/154136,第三方快照收录；本次官方decision数据未核实，不计入汇总
+ExtrapAir: Air Quality Inference at Unmonitored Locations via Weather-Bridged Spatial Attention,spotlight,Main,https://neurips.cc/virtual/2026/poster/154246,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Corrected Integrated Laplace Approximation for Bayesian Inference in Latent Gaussian Models,spotlight,Main,https://neurips.cc/virtual/2026/poster/154255,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Coordination Connectivity: Shared Initialization Shapes the Joint-Policy Landscape in MARL,oral,Main,https://neurips.cc/virtual/2026/poster/154512,第三方快照收录；本次官方decision数据未核实，不计入汇总
+The End Justifies the Mean: Linear Ranking Rules for Proportional Sequential Decisions,spotlight,Main,https://neurips.cc/virtual/2026/poster/154572,第三方快照收录；本次官方decision数据未核实，不计入汇总
+City-RAG: Stepping Into a City via Spatially-Grounded Video Generation,spotlight,Main,https://neurips.cc/virtual/2026/poster/154638,第三方快照收录；本次官方decision数据未核实，不计入汇总
+A Graph Foundation Model for Unified Clustering,spotlight,Main,https://neurips.cc/virtual/2026/poster/154668,第三方快照收录；本次官方decision数据未核实，不计入汇总
+SceneScaffold: Active Scene-State Construction for Unified 3D Scene Understanding,spotlight,Main,https://neurips.cc/virtual/2026/poster/154773,第三方快照收录；本次官方decision数据未核实，不计入汇总
+A multi-scale information geometry reveals the structure of mutual information in neural populations,oral,Main,https://neurips.cc/virtual/2026/poster/154781,第三方快照收录；本次官方decision数据未核实，不计入汇总
+ECHO: Terminal Agents Learn World Models for Free,spotlight,Main,https://neurips.cc/virtual/2026/poster/154932,第三方快照收录；本次官方decision数据未核实，不计入汇总
+All-Addition Spiking Diffusion Models with Attention Enhancement,spotlight,Main,https://neurips.cc/virtual/2026/poster/154963,第三方快照收录；本次官方decision数据未核实，不计入汇总
+MonoChunk3D: Monocular Online 3D Instance Segmentation with Persistent Instance States,spotlight,Main,https://neurips.cc/virtual/2026/poster/155123,第三方快照收录；本次官方decision数据未核实，不计入汇总
+ROSE: Risk-Aware Orthogonal Subspace Navigation for Lifelong Knowledge Editing in Multimodal Large Language Models,spotlight,Main,https://neurips.cc/virtual/2026/poster/155206,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Nearly Optimal Fixed-Confidence Best-Arm Identification with 1-Bit Feedback,spotlight,Main,https://neurips.cc/virtual/2026/poster/155304,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Understanding Sample Efficiency in Predictive Coding,spotlight,Main,https://neurips.cc/virtual/2026/poster/155323,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Free Decompression with Algebraic Spectral Curves,oral,Main,https://neurips.cc/virtual/2026/poster/155558,第三方快照收录；本次官方decision数据未核实，不计入汇总
+On the Nonlinearity of Learning Rate Scaling for LLM Training,spotlight,Main,https://neurips.cc/virtual/2026/poster/155689,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Complexity Aware Continuous Level of Details for Gaussian Splatting,spotlight,Main,https://neurips.cc/virtual/2026/poster/155902,第三方快照收录；本次官方decision数据未核实，不计入汇总
+A Bitter Lesson for Data Filtering,spotlight,Main,https://neurips.cc/virtual/2026/poster/155947,第三方快照收录；本次官方decision数据未核实，不计入汇总
+Incentivizing Medical Vision Capabilities from Large-Scale Multimodal Pre-training,oral,Main,https://neurips.cc/virtual/2026/oral/156129,第三方快照收录；本次官方decision数据未核实，不计入汇总

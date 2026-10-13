@@ -1,0 +1,37 @@
+{
+  "as_of": "2026-10-13 Asia/Shanghai",
+  "official_raw_records": 9242,
+  "official_unique_titles": 5901,
+  "official_highlight_records": 621,
+  "official_highlight_unique_titles": 329,
+  "track_counts": {
+    "主赛道": [
+      90,
+      185,
+      275
+    ],
+    "评测与数据集": [
+      13,
+      26,
+      39
+    ],
+    "立场论文": [
+      5,
+      10,
+      15
+    ]
+  },
+  "pending_secondary_snapshot": 86,
+  "classification": "Analyst-defined exclusive primary and secondary fields",
+  "sources": [
+    "https://neurips.cc/static/virtual/data/neurips-2026-orals-posters.json",
+    "https://neurips.cc/Downloads/2026",
+    "https://neurips.cc/static/virtual/data/neurips-2026-abstracts.json",
+    "https://github.com/flecomet/neurips-explorer"
+  ],
+  "sha256": {
+    "neurips-2026-orals-posters.json": "431187f30855cf03fe7004dedfc1f1cfb8218746906e2c2afdec2fb2faa833c3",
+    "official_download.json": "e7fc00f81971f89bf94d32901692286b215306eb27f7521d4fc2bfac2f965ad3",
+    "classified.json": "ba5235f0be4f01b589a7e4bd9da87e65795c214e7ca8584017a707caa26d26f4"
+  }
+}
